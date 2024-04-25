@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="icon" href="images/cv.png">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+
+        <header>
+            <div class="logo">
+                <a href="#">Juan Pablo</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()" >INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()" >SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()" >SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()" >CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()" >PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="images/ftoperfil.jpg" alt="">
+            </div>
+            <h1>Juan Pablo Gonzalez Molina</h1>
+            <h2>Multimedia Engineering | Videogame Development | Web Development | UI & UX Design | Social Network Management | Audiovisual Production | Mixed Reality</h2>
+            <div class="redes">
+                <a href="#" button onclick="redireccionar('https://www.instagram.com/jpg1422?igsh=c2U4MjRzM2Y3dTU2')"> <i class="fa-brands fa-square-instagram"></i> </button> </a>
+                <a href="#" button onclick="redireccionar('https://www.linkedin.com/in/juan-pablo-gonzalez-molina/')">  <i class="fa-brands fa-linkedin"></i> </button> </a>
+                <a href="#" button onclick="redireccionar('https://www.behance.net/juanpagonzalezm')"> <i class="fa-brands fa-square-behance"></i> </button> </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI  -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span> Hola Soy Juan Pablo</span>, Ingeniero Multimedia con una pasión por Renderizado 3D y Desarrollo de Videojuegos. He desarrollado habilidades sólidas en Desarrollo de Videojuegos, Desarrollo Web, Diseño UX/UI, Manejo de Redes Sociales, Producción Audiovisual y Realidad Mixta combinadas con un compromiso inquebrantable con la excelencia y el crecimiento profesional.
+
+                A lo largo de mi carrera, he tenido el privilegio de liderar equipos multidisciplinarios en el desarrollo de Proyectos Multimedia. Esto me ha permitido mejorar mi comunicación, trabajo en equipo, creatividad y liderazgo. Mi enfoque proactivo y mi capacidad para liderar me han permitido contribuir de manera significativa a equipos dinámicos y alcanzar resultados sobresalientes.
+                
+                Me motiva poder generar valor a organizaciones mediante un análisis creativo, para así aportar mejoras en los procesos en cuanto a la gestión de la información y la comunicación digital, y estoy comprometido a seguir aprendiendo sobre nuevas tecnologias y como hacer uso de ellas. Busco oportunidades donde pueda continuar aprendiendo en áreas como: Arte, Diseño y Programación y seguir desarrollándome en Renderizado 3D y Desarrollo de Videojuegos.</p>
+                <div class="fila">
+                    <!-- datos personales -->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                29-10-2001
+                            </li>
+                            <li>
+                                <strong>Teléfono</strong>
+                                3188433533
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                juanpagonzalez2001@gmail.com
+                            </li>
+                            <li>
+                                <strong>Dirección</strong>
+                                Calle 69 no. 1-440, Cali - Colombia
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- intereses -->
+                    <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-language"></i>
+                            <span>IDIOMAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>GYM</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-unity"></i>
+                            <span>DESARROLLO DE VIDEOJUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-cube"></i>
+                            <span>MODELADO 3D</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <button onclick="descargarPDF()">
+                    DESCARGAR CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>UNITY</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHOTOSHOP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>ILLUSTRATOR</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PREMIERE PRO</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>BLENDER</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>VISUAL STUDIO CODE</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>FIGMA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>WORDPRESS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills  -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Project Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bachiller Técnico Industrial en Diseño Gráfico</h4>
+                        <span class="casa">Liceo Napolitano</span>
+                        <span class="fecha">2013 - 2018</span>
+                        <div class="conectori">
+                            <div class="ciculoi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso de Inglés</h4>
+                        <span class="casa">Centro Cultural Colombo Americano</span>
+                        <span class="fecha">2011 - 2018</span>
+                        <p>Inglés - B1 - Programa Kids & Teens</p>
+                        <div class="conectori">
+                            <div class="ciculoi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería Multimedia</h4>
+                        <span class="casa">Universidad de San Buenaventura Cali</span>
+                        <span class="fecha">2019 - 2024</span>
+                        <div class="conectori">
+                        <div class="ciculoi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Monitor in Graphic Design</h4>
+                        <span class="casa">Universidad de San Buenaventura Cali</span>
+                        <span class="fecha">Jul 2022 - Dec 2022</span>
+                        <p>I perform functions such as Multimedia Design, Creation of Advertising Pieces,
+                        Operational Support in the Management of Social Networks and Management of the Digital Community of the Alumni Office
+                        and Employment Office of the University of San Buenaventura Cali.</p>
+                        <div class="conectord">
+                            <div class="ciculod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Multimedia Designer</h4>
+                        <span class="casa">Universidad de San Buenaventura Cali</span>
+                        <span class="fecha">Feb 2024 - Jun 2024</span>
+                        <p>Development of a 3D virtual tour of the virtual education center
+                        at universidad san buenaventura cali</p>
+                        <div class="conectord">
+                            <div class="ciculod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="images/p1render.png" alt="">
+                    <div class="overlay">
+                        <h3>Modelado y Renderizado 3D</h3>
+                        <p>Personaje Tour Virtual CEV USBCALI: Lorenzo</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/astronaut.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Modelado y Renderizado 3D</h3>
+                        <p>Astronauta</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/icono_robtrix.png" alt="">
+                    <div class="overlay">
+                        <h3>Modelado y Renderizado 3D</h3>
+                        <p>Voxel Art: Robtrix Proyecto Videojuegos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/tren.png" alt="">
+                    <div class="overlay">
+                        <h3>Modelado y Renderizado 3D</h3>
+                        <p>Tren con estilo cartoon</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/agua.png" alt="">
+                    <div class="overlay">
+                        <h3>Modelado y Renderizado 3D</h3>
+                        <p>Vaso con agua</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/cafe.png" alt="">
+                    <div class="overlay">
+                        <h3>Modelado y Renderizado 3D</h3>
+                        <p>Café</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/usbcali.png" alt="">
+                    <div class="overlay">
+                        <h3>Modelado y Renderizado 3D</h3>
+                        <p>Voxel Art: Personaje y logo de la USBCALI</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/Army.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Modelado y Renderizado 3D</h3>
+                        <p>Voxel Art: Enemigo Proyecto Videojuegos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/portal.png" alt="">
+                    <div class="overlay">
+                        <h3>Modelado y Renderizado 3D</h3>
+                        <p>Portal Dimensional</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/telefono.png" alt="">
+                    <div class="overlay">
+                        <h3>Modelado y Renderizado 3D</h3>
+                        <p>Teléfono</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <video autoplay loop muted allowfullscreen="allowfullscreen" src="images/walkvideo_p1.mp4" controls="controls" style='max-width:100%'> </video>
+                    <div class="overlay">
+                        <h3>Animación 3D</h3>
+                        <p>Personaje Lorenzo caminando</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número Telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Temas">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa  -->
+                <div class="col">
+                    <img src="images/mapa.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Calle 69 no. 1-440, Cali - Colombia
+
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile"></i>
+                                Contáctame: 3188433533
+
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: juanpagonzalez2001@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+            <div class="redes">
+            <a href="#" button onclick="redireccionar('https://www.instagram.com/jpg1422?igsh=c2U4MjRzM2Y3dTU2')"> <i class="fa-brands fa-square-instagram"></i> </button> </a>
+            <a href="#" button onclick="redireccionar('https://www.linkedin.com/in/juan-pablo-gonzalez-molina/')">  <i class="fa-brands fa-linkedin"></i> </button> </a>
+            <a href="#" button onclick="redireccionar('https://www.behance.net/juanpagonzalezm')"> <i class="fa-brands fa-square-behance"></i> </button> </a>
+        </div>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="descargarPDF.js"></script>
+    <script src="redireccionar.js"></script>
+
+</body>
+</html>
